@@ -21,5 +21,7 @@ describe('the searchInsert function', () => {
 		const nums: number[] = [1, 3, 5, 6];
 
 		expect(searchInsert(nums, 5)).toBe(2);
+		expect(searchInsert(nums, 2)).toBe(1);
+		expect(searchInsert(nums, 4)).toBe(2);
 	})
 })
