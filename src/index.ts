@@ -1,3 +1,8 @@
 export function searchInsert(nums: number[], target: number): number {
-	return 0;	
+	for (const [index, element] of nums.entries()) {
+		if (target < element || target == element) {
+			return index;	
+		}
+	}
+	return nums.length;
 };
